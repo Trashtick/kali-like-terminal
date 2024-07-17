@@ -1,17 +1,27 @@
 # kali-like-terminal
-![sample_terminal]()
+![sample_terminal](https://github.com/Trashtick/images/blob/main/Screenshot_20240717_231939.png?raw=true)
 
 If you switched from kali linux to any other distro you may have experienced an emptiness while using terminal, so here's a solution:
-# install fish
+# Install fishshell
 https://fishshell.com/  
 fish use similar syntax highlighting as autocompletion as kali's zsh
-## set fish as your default shell
+## Set fish as your default shell
 https://fishshell.com/docs/current/  
 
-after that edit it's configuration file to get kali like 2 lined terminal  
-'''  
-fish 
-nano /etc/fish/config.fish
-'''
-now paste content from provided file, save and exit.  
-reload terminal and you are done.
+After that edit it's configuration file to get kali like 2-lined prompt terminal   
+
+#### Edit config file (as root user):
+```fishshell
+    nano /etc/fish/config.fish
+```
+Now paste content from provided file, save it and reload terminal.
+Now if you want to remove that welcome greeting text:  
+#### Locate configuration file 
+```fishshell
+    nano ~/.config/fish/config.fish
+ ```
+#### Add following text at the end of file:
+```fishshell
+    set fish_greeting ""
+```
+Save and exit.
