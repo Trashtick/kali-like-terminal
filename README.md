@@ -9,6 +9,8 @@ fish use similar syntax highlighting as autocompletion as kali's zsh
 https://fishshell.com/docs/current/  
 
 after that edit it's configuration file to get kali like 2 lined terminal  
-'''fish 'nano /etc/fish/config.fish'  
+'''fish 
+nano /etc/fish/config.fish
+'''
 now paste content from provided file, save and exit.  
 reload terminal and you are done.
