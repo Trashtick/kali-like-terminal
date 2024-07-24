@@ -1,5 +1,5 @@
 function fish_prompt
-    set_color -o 2B5BB7 # Set foreground color to 209 (orange)
+    set_color -o 2B5BB7 # Set foreground color to blue
     echo -n '┌──╴'
 
     if test "$USER" = "root"
@@ -12,14 +12,14 @@ function fish_prompt
     echo -n '('(whoami)
 
    
-    echo -n '㉿'
+    echo -n '㉿'#unicode U+327F if not visible try installing required pkg
 
     echo -n (hostname)')'
     
-    set_color -o 2B5BB7
+    set_color -o 2B5BB7 
     echo -n '-['
 
-    set_color -o white # Set foreground color to green
+    set_color -o white # Set foreground color to white(directory)
     echo -n (prompt_pwd)
 
     set_color -o 2B5BB7
